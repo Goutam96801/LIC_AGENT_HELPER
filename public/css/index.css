@@ -15,10 +15,6 @@
             scroll-behavior: smooth;
         }
         
-         ::selection {
-            color: #fff;
-        }
-        
         .navbar {
             width: 100%;
             height: 60px;
@@ -137,36 +133,6 @@
             padding: 20px 0;
         }
         
-        .footer-container {
-            display: flex;
-            justify-content: space-between;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        .footer-links ul {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .footer-links ul li {
-            margin-bottom: 10px;
-        }
-        
-        .footer-links ul li a {
-            color: #333;
-            text-decoration: none;
-        }
-        
-        .footer-contact {
-            margin-left: 50px;
-        }
-        
-        .footer-contact h3 {
-            margin-bottom: 10px;
-        }
-        
         .footer-bottom {
             background-color: #e0e0e0;
             text-align: center;
@@ -175,6 +141,7 @@
         
         .footer-bottom p {
             margin: 0;
+            color: #000;
         }
         
         .banner-bottom img {

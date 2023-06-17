@@ -27,14 +27,14 @@ body {
 
 .heading {
     color: #c8c5c5;
-    font-size: 60px;
+    font-size: 48px;
     text-align: center;
     position: relative;
-    margin: 100px 0 20px;
+    margin: 70px 0 40px;
 }
 
 .policy-section {
-    margin-top: 60px;
+    margin-top: 20px;
     width: 100%;
     position: relative;
     background: yellow;
@@ -156,4 +156,48 @@ p {
 .delete-btn {
     background-color: red;
     color: #fff;
+}
+
+#search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-input {
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    margin: 4px;
+    width: 50%;
+    color: darkblue;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.search-btn {
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    margin: 4px;
+    cursor: pointer;
+    width: auto;
+    transition: .5s;
+    font-size: 16px;
+}
+
+.search-btn:hover {
+    background: yellow;
+    color: darkblue;
+}
+
+#search-input::placeholder {
+    color: darkblue;
+}
+
+#search-input:active {
+    background-color: yellow;
+    color: darkblue;
 }

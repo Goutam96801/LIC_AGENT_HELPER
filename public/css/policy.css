@@ -85,6 +85,9 @@
     padding: 10px;
     text-decoration: none;
     border-radius: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
 }
 
 @media screen and (max-width: 600px) {
@@ -105,4 +108,17 @@
         bottom: 10px;
         right: 10px;
     }
+}
+
+#print-button {
+    background-color: yellow;
+    color: darkblue;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    border: none;
+    cursor: pointer;
 }

@@ -2,6 +2,8 @@ let ui = new firebaseui.auth.AuthUI(auth);
 let login = document.querySelector('.login');
 const policySection = document.querySelector('.policy-section');
 const loadingScreen = document.querySelector('.loading-screen');
+const searchForm = document.getElementById('search-form');
+const searchInput = document.getElementById('search-input');
 
 auth.onAuthStateChanged((user) => {
     if (user) {
@@ -54,6 +56,29 @@ const createPolicy = (policy) => {
             </div>
         </div>`;
 };
+
+searchForm.addEventListener('submit', handleSearch);
+
+
+function handleSearch(e) {
+    e.preventDefault();
+    const searchTerm = searchInput.value.trim().toLowerCase();
+    searchPolicies(searchTerm);
+}
+
+function searchPolicies(searchTerm) {
+    const policyCards = document.querySelectorAll('#policy-section .card');
+    policyCards.forEach((card) => {
+        const policyNumber = card.querySelector('.policy-number-display').textContent.toLowerCase();
+        const policyholderName = card.querySelector('.policyholder-name-display').textContent.toLowerCase();
+        if (policyNumber.includes(searchTerm) || policyholderName.includes(searchTerm)) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+
 
 function showLoadingScreen() {
     loadingScreen.style.display = 'flex';

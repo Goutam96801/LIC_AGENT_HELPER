@@ -29,7 +29,9 @@ docRef
         <p class="policy-cards">Father's Name: <span class="value">${data.fatherNameValue}</span></p>
         <p class="policy-cards">Nominee Details: <span class="value">${data.nomineeDetailValue}</span></p>
         <p class="agent-name">LIC Advisor: ${data.author}</p>
+        <button id="print-button">Print</button>
       `;
+
 
             // Append the details HTML to the container
             const policyContainer = document.querySelector("#policy-container");
@@ -55,10 +57,17 @@ docRef
                         paragraphElement.appendChild(anchorElement);
 
                         policyContainer.appendChild(paragraphElement);
+
                     })
 
                 }
             }
+
+            const printButton = document.getElementById("print-button");
+            printButton.addEventListener("click", () => {
+                window.print();
+            });
+
 
         } else {
             // Handle case when the document does not exist
