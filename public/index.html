@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent - Helper</title>
+    <link rel="icon" href="/img/logo.jpg">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar">
+
+        <img class="logo-img" src="./img/logo.svg" width="100px" alt="logo" />
+        <!-- toggler -->
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="links-container">
+            <li class="link-item">
+                <a href="/" class="link">Home</a>
+            </li>
+            <li class="link-item">
+                <a href="/editor" class="link">Add a Policy</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="header">
+        <div class="banner-container">
+            <div class="banner-slideshow">
+                <a href="https://akam.licindia.in/" target="_blank"><img src="img/banner1.jpg"></a>
+                <a href="https://digisales.licindia.in/eSales/liconline/setprop?plan=867" target="_blank"><img src="img/banner2.jpg" /></a>
+                <a href="https://digisales.licindia.in/eSales/liconline/setprop?plan=868" target="_blank"><img src="img/banner3.jpg"></a>
+                <a href="https://digisales.licindia.in/eSales/liconline/setprop?plan=849" target="_blank"><img src="img/banner4.jpg"></a>
+                <a href="https://linkpan.licindia.in/UIDSeedingWebApp/" target="_blank"><img src="img/banner5.jpg"></a>
+            </div>
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+        <div class="content">
+            <h1 class="heading">
+                <span class="small">Welcome to your </span>space
+            </h1>
+            <a href="/editor" class="btn">Add a Policy</a>
+        </div>
+
+        <div class="banner-bottom">
+            <a href="https://agencycareer.licindia.in/agt_req/New_Lead_Candidate_Data_entry_For_NewWeb.php"><img src="img/banner-agent.jpg" /></a>
+        </div>
+
+        <!-- Virtual Assistant Widget -->
+        <div id="chat-widget">
+            <div class="sticker">
+                <span><img src="img/chatbot.jpg" width="100%"/></span>
+            </div>
+            <div class="textbox">
+                <img src="img/chatbot-1.webp" width="90%" />
+                <p>Please wait patiently, we will add this feature soon...</p>
+            </div>
+        </div>
+
+
+    </header>
+
+    <footer>
+
+        <div class="footer-bottom">
+            <p>&copy; 2023 LIC Agent Portal. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.9.1/firebase-app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.9.1/firebase-firestore.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+
+    <script src="js/index.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/nav.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+.policy {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    margin-top: 60px;
+    width: 100%;
+    position: relative;
+    background: darkblue;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.container,
+.article {
+    position: relative;
+    height: fit-content;
+    min-height: auto;
+    height: fit-content;
+    padding: 0 10px;
+    white-space: normal;
+}
+
+.article * {
+    margin: 30px 0;
+    color: #2d2d2d;
+}
+
+.image-pair-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.article-image {
+    max-width: 100%;
+    max-height: 400px;
+    display: block;
+    margin: 30px auto;
+    object-fit: contain;
+}
+
+.container p {
+    width: 100%;
+    min-height: 40px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.policy-cards {
+    min-height: 40px;
+    background-color: yellow;
+    margin-bottom: 6px;
+    color: darkblue;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.value {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.agent-name {
+    color: #fff;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.pdf-link {
+    background-color: yellow;
+    color: darkblue;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        margin-top: 80px;
+        padding: 10px;
+    }
+    .policy {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .policy-cards {
+        font-size: 14px;
+    }
+    .pdf-link {
+        padding: 8px;
+        font-size: 14px;
+        bottom: 10px;
+        right: 10px;
+    }
+}
